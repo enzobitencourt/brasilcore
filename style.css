@@ -1,0 +1,261 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+}
+
+header h1{
+    font-size: 15px;
+    color: #fefefe;
+    font-family: ArchivoBlack;
+    margin-right: 7%;
+    margin-top: 1.5%;
+    display: inline-flex;
+    margin-left: 150vh;
+    text-align: right;
+}
+
+.cor{
+    background-color: #000000;
+    border: none;
+}
+
+.cor:hover{
+    background-color: #000000;
+    border: none;
+}
+
+.menu{
+    width: 25px;
+    height: 25px;
+}
+
+.direita{
+    display: inline-flex;
+    margin-top: 1.5%;
+    margin-left: 7%;
+}
+
+.sem{
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: ArchivoBlack;
+    src: url(fonte.archivoblack/ArchivoBlack-Regular.ttf);
+}
+
+.fundo{
+    background-color: #000000;
+}
+
+.tudo{
+    width: 100%;
+    padding: 0;
+}
+
+.container{
+    margin-top: 1.5%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "central central central central central central central central insc"
+    "motivo motivo motivo somos somos somos objetivo objetivo objetivo";
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: 250px 250px;
+    font-family: ArchivoBlack;
+    margin-bottom: 3%;
+}
+
+.o-central{
+    background: url(img/central.jpg);
+    background-size: cover;
+    background-position: 25%;
+    grid-area: central;
+    border-radius:  15px;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+.o-central h1{
+    font-size: 60px;
+    color: #fefefe;
+    line-height: 60px;
+}
+
+.o-central:hover{
+    transform: scale(1.02)
+}
+
+
+.o-insc{
+    background-color: #fefefe;
+    grid-area: insc;
+    border-radius:  15px;
+    padding: 10px 12px;
+    align-items: end;
+    text-decoration: none;
+}
+
+.flecha{
+    transform: rotate(-31.25deg);
+    width: 35px;
+    height: 25px;
+    position: relative;
+    display: inline-flex;
+}
+
+.o-insc h1{
+    font-size: 25px;
+    text-align: end;
+    color: #000000;
+    display: inline-flex;
+}
+
+.o-insc:hover{
+    transform: scale(1.02)
+}
+
+.o-motivo{
+    background: url(img/motivo.jpg);
+    background-size: cover;
+    grid-area: motivo;
+    border-radius:  15px;
+    padding: 10px 12px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.o-motivo h1{
+    font-size: 25px;
+    text-align:start;
+    margin-top: 35%;
+}
+
+.o-motivo:hover{
+    transform: scale(1.02)
+}
+
+.o-somos{
+    background: url(img/somos.png);
+    background-size: cover;
+    grid-area: somos;
+    border-radius:  15px;
+    padding: 10px 12px;
+    color: #fefefe;
+    text-decoration: none;
+}
+
+.o-somos h1{
+    font-size: 23px;
+}
+
+.o-somos p{
+    margin-top: 0;
+    font-size: 12px;
+}
+
+.o-somos:hover{
+    transform: scale(1.02)
+}
+
+.conhecer{
+    width: auto;
+    padding: 3px 10px;
+    height: 35px;
+    border: solid black 1px;
+    color:#fefefe;
+    background-color: #000000;
+    font-family: Archivo;
+    font-size: 12px;
+    border-radius: 20px;
+    float: right;
+    margin-top: 85px;
+}
+
+.conhecer:hover{
+    transform: scale(1.02)
+}
+
+.o-objetivo{
+    background: url(img/objetivo.png);
+    background-size: cover;
+    grid-area: objetivo;
+    border-radius:  15px;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+.o-objetivo h1{
+    color: #fefefe;
+    font-size: 20px;
+    text-align: end;
+}
+
+.o-objetivo:hover{
+    transform: scale(1.02)
+}
+
+@media all and (max-width: 762px) {
+    .container{
+        margin-top: 5%;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-areas: 
+        "central central central central"
+        "motivo motivo objetivo objetivo"
+        "somos somos somos insc";
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 250px 250px 250px;
+        font-family: ArchivoBlack;
+        margin-bottom: 5%;
+    } 
+
+    .o-central h1{
+        font-size: 30px;
+        color: #fefefe;
+        line-height: 30px;
+    }
+
+    .o-motivo h1{
+        font-size: 20px;
+        line-height: 20px;
+        margin-top: 98%;
+    }
+
+    header h1{
+        font-size: 15px;
+        color: #fefefe;
+        font-family: ArchivoBlack;
+        margin-right: 7%;
+        margin-top: 2%;
+        float: right;
+        display: inline-flex;
+        margin-left: 40%;
+        text-align: right;
+    }
+
+    .direita{
+        display: inline-flex;
+        margin-top: 1.5%;
+        margin-left: 3%;
+    }
+
+    .o-insc h1{
+        font-size: 20px;
+        text-align: end;
+        display: inline-flex;
+        margin-top: 5px;
+    }
+
+    .flecha{
+        transform: rotate(-31.25deg);
+        width: 30px;
+        height: 20px;
+        position: relative;
+        display: inline-flex;
+    }
+
+}

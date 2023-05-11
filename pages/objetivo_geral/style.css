@@ -1,0 +1,174 @@
+* {
+padding: 0;
+margin: 0;
+vertical-align: baseline;
+list-style: none;
+border: 0;
+}
+
+@font-face {
+font-family: ArchivoBlack;
+src: url(../../fonte.archivoblack/ArchivoBlack-Regular.ttf);
+}
+
+.menu {
+margin: 1.5% 6%;
+}
+
+header h1 {
+font-size: 15px;
+color: #fefefe;
+font-family: ArchivoBlack;
+float: right;
+text-align: right;
+}
+
+main {
+margin-top: 1%;
+padding: 0;
+display: flex;
+align-items: flex-start;
+}
+
+.fundo {
+background-color: #000000;
+}
+
+.voltar {
+width: 30px;
+height: 30px;
+}
+
+.container{
+margin-top: 1.5%;
+display: grid;
+grid-gap: 10px;
+grid-template-areas: 
+"imagemGuri01 imagemGuri02 imagemGuri02"
+"imagemGuri01 texto texto"
+"imagemGuri01 texto texto";
+grid-template-columns: 32% 32% 32%;
+grid-template-rows: 250px 130px 150px;
+font-family: ArchivoBlack;
+margin-bottom: 3%;
+margin-left: 3%;
+padding-left: 3%;
+}
+
+.texto {
+grid-area: texto;
+width: 80%;
+padding-top: 2%;
+height: 85%;
+margin-left: 10%;
+padding-bottom: 28%;
+
+}
+
+.imagemGuri01 {
+grid-area: imagemGuri01;
+border-radius:  10px;
+width: 100%;
+height: 100%;
+}
+
+.imagemGuri01:hover{
+transform: scale(1.02);
+}
+
+.imagemGuri02 {
+grid-area: imagemGuri02;
+border-radius:  15px;
+width: 100%;
+height: 100%;
+}
+
+.imagemGuri02:hover{
+transform: scale(1.02);
+}
+
+.titulo {
+src: url(../fonte/ArchivoBlack-Regular.ttf);
+color: #fefefe;
+font-family: ArchivoBlack;
+font-size: 135%;
+line-height: 100%;
+}
+
+.corpoTexto {
+color: #fefefe;
+font-family: Archivo;
+height: 100px;
+font-size: 90%;
+}
+
+.espacoLinhas {
+margin-top: -8%;
+font-size: 135%;
+}
+
+hr {
+border: 0;
+border-top: 20px solid #fefefe;
+width: 75%;
+margin-top: 50%;
+}
+
+@media all and (max-width: 762px) {
+    .menu {
+        margin: 3% 6%;
+
+    }
+    .container{
+        margin-top: 3%;
+        display: grid;
+        grid-gap: 10px;
+        width: 120%;
+        grid-template-areas: 
+        "imagemGuri02"
+        "texto"
+        "imagemGuri01";
+        grid-template-columns: auto;
+        grid-template-rows: auto auto 30%;
+        font-family: ArchivoBlack;
+        margin-left: 10%;
+        padding-left: 3%;
+        }
+    
+    .corpoTexto {
+        color: #fefefe;
+        font-family: Archivo;
+        /* height: auto; */
+
+        font-size: 100%;
+    }
+
+    .texto {
+    grid-area: texto;
+    width: 90%;
+    height: 55vh;
+    margin-left: 5%;
+    margin-bottom: -60px;
+    }
+    
+    .imagemGuri01 {
+    grid-area: imagemGuri01;
+    border-radius:  10px;
+    width: 100%;
+    height: auto;
+
+    }
+
+    .imagemGuri02 {
+    grid-area: imagemGuri02;
+    border-radius:  15px;
+    width: 100%;
+    height: 100%;
+    }
+    hr {
+        border: 0;
+        border-top: 20px solid #fefefe;
+        width: 75%;
+    }
+        
+}

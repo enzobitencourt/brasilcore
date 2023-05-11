@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
+    }
+    
+    @font-face {
+    font-family: ArchivoBlack;
+    src: url(../../../../fonte.archivoblack/ArchivoBlack-Regular.ttf);
+    }
+    
+    .menu {
+    margin: 1.5% 6%;
+    }
+    
+    header h1 {
+    font-size: 15px;
+    color: #fefefe;
+    font-family: ArchivoBlack;
+    float: right;
+    text-align: right;
+    }
+    
+    main {
+    margin-top: 1%;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    }
+    
+    .fundo {
+    background-color: #000000;
+    }
+    
+    .voltar {
+    width: 30px;
+    height: 30px;
+    }
+
+    .titulo {
+        src: url(../fonte/ArchivoBlack-Regular.ttf);
+        color: #fefefe;
+        font-family: ArchivoBlack;
+        margin-top: -3%;
+        margin-left: 15%;
+        display: block;
+        width: 50%;
+        font-size: 120%;
+        margin-bottom: 5%;
+    }
+
+    .corpoTexto {
+        color: #fefefe;
+        font-family: Arial;
+        margin-top: -1%;
+        width: 100%;
+        font-size: 70%;
+    }
+
+    .block{
+        display: block;
+    }
+    .container{
+        margin-top: 1.5%;
+        display: grid;
+        width: 100%;
+        height: 80%;
+        grid-gap: 10px;
+        grid-template-areas: 
+        "casalbeijo casalbeijo casalbeijo casalbeijo guricaminhao guricaminhao"
+        "carrosel carrosel pessoasposicaofetal pessoasposicaofetal pessoasposicaofetal empreguetes ";
+        grid-template-columns: 16% 16% 16% 16% 16%;
+        grid-template-rows: 250px 190px;
+        font-family: ArchivoBlack;
+        margin-bottom: 3%;
+    }
+    
+    .carrosel {
+        grid-area: carrosel;
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+    }
+    .carrosel:hover{
+        transform: scale(1.02);
+    }
+
+    .casalbeijo {
+        grid-area: casalbeijo;
+        border-radius:  10px;
+        width: 100%;
+        height: 100%;
+    }
+    .casalbeijo:hover{
+        transform: scale(1.02);
+    }
+
+    .empreguetes {
+        grid-area: empreguetes;
+        border-radius:  10px;
+        height: 100%;
+        width: 100%;
+    }
+    .empreguetes:hover{
+        transform: scale(1.02);
+    }
+
+    .guricaminhao {
+        grid-area: guricaminhao;
+        border-radius:  10px;
+        height: 100%;
+        width: 100%;
+    }
+    .guricaminhao:hover{
+        transform: scale(1.02);
+    }
+
+    .pessoasposicaofetal {
+        grid-area: pessoasposicaofetal;
+        border-radius:  10px;
+        height: 100%;
+        width: 100%;
+    }
+    .pessoasposicaofetal:hover{
+        transform: scale(1.02);
+    }
+
+@media all and (max-width: 762px) {
+    .container{
+        margin-top: 3%;
+        display: grid;
+        width: 80%;
+        height: 80%;
+        grid-gap: 10px;
+        grid-template-areas: 
+        "casalbeijo casalbeijo casalbeijo" 
+        "guricaminhao guricaminhao carrosel"
+        "empreguetes pessoasposicaofetal pessoasposicaofetal";
+        grid-template-columns: 31% 31% 31%;
+        grid-template-rows: 200px 200px 200px;
+        font-family: ArchivoBlack;
+        margin-bottom: 3%;
+    }
+
+    .titulo {
+        src: url(../fonte/ArchivoBlack-Regular.ttf);
+        color: #fefefe;
+        font-family: ArchivoBlack;
+        margin-top: 10%;
+        margin-left: 10%;
+        display: block;
+        width: 75%;
+        font-size: 120%;
+        margin-bottom: 5%;
+    }
+
+    .corpoTexto {
+        color: #fefefe;
+        font-family: Arial;
+        margin-top: -1%;
+        width: 100%;
+        font-size: 70%;
+    }
+}

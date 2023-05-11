@@ -1,0 +1,173 @@
+* {
+padding: 0;
+margin: 0;
+vertical-align: baseline;
+list-style: none;
+border: 0;
+}
+
+@font-face {
+font-family: ArchivoBlack;
+src: url(../../fonte.archivoblack/ArchivoBlack-Regular.ttf);
+}
+
+.menu {
+margin: 1.5% 6%;
+}
+
+.container{
+    margin-top: 3%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "colunam colunap";
+    grid-template-columns: 35% 60%;
+    grid-template-rows: 80%;
+    font-family: ArchivoBlack;
+}
+
+header h1 {
+font-size: 15px;
+color: #fefefe;
+font-family: ArchivoBlack;
+float: right;
+text-align: right;
+}
+
+main {
+margin-top: 1%;
+padding: 0;
+display: flex;
+align-items: flex-start;
+}
+
+.fundo {
+background-color: #000000;
+}
+
+.colunam {
+grid-area: colunam;
+display: flex;
+padding: 0;
+margin-top: 8%;
+}
+
+.colunap {
+grid-area: colunap;
+font-family: ArchivoBlack;
+display: flex;
+padding: 0;
+margin-top: 2%;
+margin-left: 15%;
+}
+
+.sem{
+    text-decoration: none;
+}
+
+.voltar {
+width: 30px;
+height: 30px;
+}
+
+.texto {
+color: #fefefe;
+font-family: Archivo;
+font-size: 15px;
+text-align: justify;
+}
+
+hr {
+	border: 0;
+	border-top: 20px solid #fefefe;
+    width: 75%;
+}
+
+.textos h1 {
+font-size: 900%;
+color: #8d8d8d;
+line-height: 130px;
+display: block;
+text-align: end;
+margin: 1;
+letter-spacing: -0.02em;
+filter: blur(3.5px);
+}
+
+.textos h1:hover {
+transform: scale(1.07);
+color: #fefefe;
+filter: blur(0);
+}
+
+.inscrever{
+    width: auto;
+    padding: 3px 10px;
+    height: 35px;
+    border: solid #fefefe 1px;
+    color:#000000;
+    background-color: #fefefe;
+    font-family: Archivo;
+    font-size: 14px;
+    border-radius: 20px;
+    float: left;
+    margin-top: 5px;
+    display: block;
+}
+
+.inscrever:hover{
+    transform: scale(1.05);
+}
+
+.abaixo{
+    display:block;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: Archivo;
+    line-height: 20px;
+}
+
+
+@media all and (max-width: 762px) {
+.container{
+    margin-top: 3%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "colunam"
+    "colunap";
+    grid-template-columns: 90%;
+    grid-template-rows: auto auto;
+    font-family: ArchivoBlack;
+    margin-bottom: 3%;
+}
+
+.colunam {
+grid-area: colunam;
+display: flex;
+padding: 0;
+margin-top: 8%;
+margin-left: 5%;
+}
+
+.colunap {
+grid-area: colunap;
+font-family: ArchivoBlack;
+display: flex;
+padding: 0;
+margin-top: 7%;
+margin-left: 5%;
+}
+
+.textos h1 {
+font-size: 450%;
+color: #8d8d8d;
+line-height: 60px;
+display: block;
+text-align: start;
+margin: 1;
+letter-spacing: -0.02em;
+filter: blur(3.5px);
+}
+
+}

@@ -1,0 +1,149 @@
+* {
+padding: 0;
+margin: 0;
+vertical-align: baseline;
+list-style: none;
+border: 0;
+}
+
+@font-face {
+font-family: ArchivoBlack;
+src: url(../../fonte.archivoblack/ArchivoBlack-Regular.ttf);
+}
+
+.menu {
+margin: 1.5% 6%;
+}
+
+header h1 {
+font-size: 15px;
+color: #fefefe;
+font-family: ArchivoBlack;
+float: right;
+text-align: right;
+}
+
+main {
+margin-top: 1%;
+padding: 0;
+display: flex;
+align-items: flex-start;
+margin-left: 4%;
+}
+
+.fundo {
+background-color: #000000;
+}
+
+.voltar {
+width: 30px;
+height: 30px;
+}
+
+.container{
+    margin-top: 1.5%;
+    display: grid;
+    width: 90%;
+    margin-left: 20%;
+    grid-gap: 0px;
+    grid-template-areas: 
+    "titulo titulo imagem imagem"
+    "texto texto imagem imagem";
+    grid-template-columns: 30% 30% 20% 15%;
+    grid-template-rows: 420px 200px;
+    font-family: ArchivoBlack;
+    margin-bottom: 3%;
+}
+
+.titulo{
+    grid-area: titulo;
+    font-family: ArchivoBlack;
+    color: #fefefe;
+    line-height: 90px;
+    letter-spacing: -0.02em;
+    font-size: 140px;
+}
+.imagem{
+    grid-area: imagem;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    float: right;
+    margin-top: 10%;
+    z-index: 1000;
+}
+
+.imagem:hover{
+    transform: scale(1.05);
+}
+
+.texto{
+    grid-area: texto;
+    font-family: Archivo;
+    color: #fefefe;
+    gap: 5%;
+}
+
+.divisao{
+    width: 45%;
+    display: inline-flex;
+}
+
+hr {
+	border: 0;
+	border-top: 20px solid #fefefe;
+    width: 60%;
+    margin-left: 5%;
+}
+
+@media screen and (max-width: 762px) {
+    .container{
+        margin-top: 3%;
+        display: grid;
+        width: 100%;
+        margin-left: 20%;
+        grid-gap: 20px;
+        grid-template-areas: 
+        "titulo"
+        "texto"
+        "imagem";
+        grid-template-columns: 150%;
+        grid-template-rows: auto auto auto;
+        font-family: ArchivoBlack;
+        margin-bottom: 3%;
+    }
+    
+    .titulo{
+        grid-area: titulo;
+        font-family: ArchivoBlack;
+        color: #fefefe;
+        line-height: 50px;
+        letter-spacing: -0.02em;
+        font-size: 70px;
+    }
+
+    .imagem{
+        grid-area: imagem;
+        width: 100%;
+        border-radius: 15px;
+        float: right;
+        margin-top: 2%;
+        z-index: 1000;
+    }
+    
+    .imagem:hover{
+        transform: scale(1.05);
+    }
+    
+    .texto{
+        grid-area: texto;
+        font-family: Archivo;
+        color: #fefefe;
+    }
+    
+    .divisao{
+        width: 100%;
+        display: flex;
+        margin-left: 3%;
+    }
+}

@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
+    }
+    
+    @font-face {
+        font-family: ArchivoBlack;
+        src: url(../../../../fonte.archivoblack/ArchivoBlack-Regular.ttf);
+        }    
+    
+    .menu {
+    margin: 1.5% 6%;
+    }
+    
+    header h1 {
+    font-size: 15px;
+    color: #fefefe;
+    font-family: ArchivoBlack;
+    float: right;
+    text-align: right;
+    }
+    
+    main {
+    margin-top: 1%;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    }
+    
+    .fundo {
+    background-color: #000000;
+    }
+    
+    .voltar {
+    width: 30px;
+    height: 30px;
+    }
+
+    .titulo {
+        src: url(../fonte/ArchivoBlack-Regular.ttf);
+        color: #fefefe;
+        font-family: ArchivoBlack;
+        margin-top: -3%;
+        margin-left: 15%;
+        display: block;
+        width: 50%;
+        font-size: 120%;
+        margin-bottom: 5%;
+    }
+
+    .corpoTexto {
+        color: #fefefe;
+        font-family: Arial;
+        margin-top: -1%;
+        width: 50%;
+        font-size: 70%;
+    }
+
+    .block{
+        display: block;
+    }
+    .container{
+        margin-top: 1.5%;
+        display: grid;
+        width: 100%;
+        height: 80%;
+        grid-gap: 10px;
+        grid-template-areas: 
+        "pacoca paodiqueijo pamonha pamonha"
+        "pacoca feijoada feijoada feijoada";
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 250px 250px;
+        font-family: ArchivoBlack;
+        margin-bottom: 3%;
+    }
+    
+    .pacoca {
+        grid-area: pacoca;
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+    }
+    .pacoca:hover{
+        transform: scale(1.02);
+    }
+
+    .paodiqueijo {
+        grid-area: paodiqueijo;
+        border-radius:  10px;
+        width: 100%;
+        height: 100%;
+    }
+    .paodiqueijo:hover{
+        transform: scale(1.02);
+    }
+
+    .pamonha {
+        grid-area: pamonha;
+        border-radius:  10px;
+        height: 100%;
+        width: 100%;
+    }
+    .pamonha:hover{
+        transform: scale(1.02);
+    }
+
+    .feijoada {
+        grid-area: feijoada;
+        border-radius:  10px;
+        height: 100%;
+        width: 100%;
+    }
+    .feijoada:hover{
+        transform: scale(1.02);
+    }
+
+@media all and (max-width: 762px) {
+    .container{
+        margin-top: 3%;
+        display: grid;
+        width: 80%;
+        height: 80%;
+        grid-gap: 10px;
+        grid-template-areas: 
+        "pacoca pamonha pamonha" 
+        "pacoca paodiqueijo paodiqueijo"
+        "feijoada feijoada feijoada";
+        grid-template-columns: 31% 31% 31%;
+        grid-template-rows: 200px 200px 200px;
+        font-family: ArchivoBlack;
+        margin-bottom: 3%;
+    }
+
+    .titulo {
+        src: url(../fonte/ArchivoBlack-Regular.ttf);
+        color: #fefefe;
+        font-family: ArchivoBlack;
+        margin-top: 10%;
+        margin-left: 10%;
+        display: block;
+        width: 75%;
+        font-size: 120%;
+        margin-bottom: 5%;
+    }
+
+    .corpoTexto {
+        color: #fefefe;
+        font-family: Arial;
+        margin-top: -1%;
+        width: 100%;
+        font-size: 70%;
+    }
+}
