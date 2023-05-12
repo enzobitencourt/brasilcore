@@ -50,7 +50,7 @@ height: 30px;
     "titulo titulo imagem imagem"
     "texto texto imagem imagem";
     grid-template-columns: 30% 30% 20% 15%;
-    grid-template-rows: 420px 200px;
+    grid-template-rows: 420px auto;
     font-family: ArchivoBlack;
     margin-bottom: 3%;
 }
@@ -87,6 +87,8 @@ height: 30px;
 .divisao{
     width: 45%;
     display: inline-flex;
+    padding-right: 5%;
+    text-align: justify;
 }
 
 hr {
